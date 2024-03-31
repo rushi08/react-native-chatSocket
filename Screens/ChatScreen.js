@@ -9,7 +9,6 @@ import {
   View,
 } from 'react-native';
 import {GlobalContext} from '../Context';
-import {AntDesign} from '@expo/vector-icons';
 import Chatcomponent from '../Components/Chatcomponent';
 import NewGroupModal from '../Components/Model';
 import {socket} from '../Utils';
@@ -33,7 +32,6 @@ export default function Chatscreen({navigation}) {
   }, [socket]);
 
   function handleLogout() {
-    console.log('helloooo');
     setCurrentUser('');
     setShowLoginView(false);
   }

@@ -1,7 +1,4 @@
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
-// import {FontAwesome} from '@expo/vector-icons';
-import {useContext, useEffect} from 'react';
-import {GlobalContext} from '../Context';
 import {useNavigation} from '@react-navigation/native';
 
 export default function Chatcomponent({item}) {
@@ -19,7 +16,6 @@ export default function Chatcomponent({item}) {
   return (
     <Pressable style={styles.chat} onPress={handleNavigateToMessageScreen}>
       <View style={styles.circle}>
-        {/* <FontAwesome name="group" size={24} color={'black'} /> */}
         <Image
           style={{height: 28, width: 28}}
           source={require('../Assets/team.png')}
